@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
 .App {
   text-align: center;
 }
@@ -18,6 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
 }
 
 section {
@@ -26,13 +26,12 @@ section {
   justify-content: center;
   align-items: center;
   background: #ffffff;
-  min-height: 100vh;
   overflow: hidden;
 }
 
 .content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: baseline;
   gap: 30px;
@@ -41,13 +40,14 @@ section {
     rgba(255, 255, 255, 0.28) 0%,
     rgba(255, 255, 255, 0) 100%
   );
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(20px);
   border-radius: 20px;
-  width: min(900px, 100%);
+  width: min(350px, 100%);
   box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
     0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
   z-index: 10;
   padding: 6rem 0;
+  margin: 4rem 0;
 }
 
 .info {
@@ -58,7 +58,6 @@ section {
   max-width: 450px;
   padding: 0 35px;
   text-align: justify;
-  font-family: "Comfortaa", cursive;
 }
 
 .info p {
@@ -72,6 +71,8 @@ section {
 .info h1 {
   font-size: 2.1rem;
   font-weight: 700;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
 }
 .movie-night {
   background: linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
@@ -120,10 +121,9 @@ section {
 /* SWIPER */
 
 .swiper {
-  width: 350px;
+  width: 250px;
   height: 180px;
   padding: 50px 0;
-  margin: 0 !important;
 }
 
 .swiper-slide {
@@ -150,11 +150,12 @@ section {
 }
 
 .swiper-slide h2 {
-  color: #000;
-  font-weight: 700;
-  font-size: 2.1rem;
+  font-size: 1.9rem;
   line-height: 1.4;
-  font-family: "Archivo", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: #fcd64b;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 .swiper-slide {
   display: flex !important;
@@ -196,14 +197,13 @@ section {
   width: 20px;
   height: 20px;
   background-color: #bdc3c7;
-  /* background-image: linear-gradient(
+  background-image: linear-gradient(
     225deg,
-    #ff3cac 0%,
-    #784ba0 50%,
-    #2b86c5 100%
-  ); */
+    #d0d1d2 0%,
+    #eadeb3 50%,
+    #e3e5e7 100%
+  );
 
-  animation: animate 25s linear infinite;
   bottom: -150px;
 }
 
@@ -283,25 +283,66 @@ section {
 }
 
 .featured {
-  background-color: #bdc3c7;
+  background-color: #000;
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
   width: 100%;
+  padding: 4rem;
+  margin-top: 6rem;
+  color: #ffffff;
+}
+
+.featured h1 {
+  text-align: unset;
+  font-size: 2rem;
 }
 .featured-projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.featured-column {
+  display: grid;
+  gap: 2rem;
 }
 
 .project {
-  width: 200px;
-  height: 300px;
-  border: 1px solid #fff;
+  height: 350px;
+  border: 2px solid #fcd64b;
+  border-radius: 2rem;
+  max-width: 350px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(30px);
+  padding: 1rem 3rem;
+}
+
+.channels img {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.brand h3 {
+  font-size: 1.6rem;
+  font-family: "Caveat Brush", cursive;
+  color: #fcd64b;
+  text-decoration-line: underline;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
 }
 
 @keyframes animate {
   0% {
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(0px) rotate(0deg);
     opacity: 1;
     border-radius: 0;
   }
@@ -313,14 +354,54 @@ section {
   }
 }
 
-/*
-@media (max-width: 750px) {
-  .content {
-     flex-direction: column-reverse;
+@media (min-width: 768px) {
+  header {
+    padding: 3rem 7rem 1rem;
   }
-  
+  section {
+    min-height: 85vh;
+  }
+
+  .content {
+    flex-direction: row;
+    width: min(900px, 100%);
+    margin: 0;
+  }
+
+  .swiper {
+    margin: 0 !important;
+    width: 350px;
+  }
+
+  .featured {
+    margin-top: 0;
+    padding: 4rem 5rem;
+  }
+
+  .featured-projects {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10rem;
+  }
+  .featured-column {
+    gap: 10rem;
+  }
+
+  .featured-column.right {
+    margin-top: 20rem;
+  }
+  .featured h1 {
+    margin-bottom: 3rem;
+  }
+
+  .brand h3 {
+    font-size: 2.5rem;
+  }
+
   .btn {
     margin: 10px auto 40px;
   }
+
+  .circles li {
+    animation: animate 25s linear infinite;
+  }
 }
-*/

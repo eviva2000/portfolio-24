@@ -21,31 +21,31 @@ const Canvas: React.FC = () => {
             modules={[EffectCards]}
           >
             <SwiperSlide>
-              <h2>Frontend Developer.</h2>
+              <h2>Frontend Developer</h2>
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <h2>Backend Explorer.</h2>
+              <h2>Backend Explorer</h2>
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <h2>Mom of 2.</h2>
+              <h2>Mom of 2</h2>
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <h2>Design patterns learner.</h2>
+              <h2>Design patterns learner</h2>
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <h2>Critical thinker.</h2>
+              <h2>Critical thinker</h2>
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <h2>Music student.</h2>
+              <h2>Music student</h2>
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <h2>DevOps explorer.</h2>
+              <h2>DevOps explorer</h2>
             </SwiperSlide>
 
             <SwiperSlide>
@@ -68,43 +68,47 @@ const Canvas: React.FC = () => {
         </ul>
       </section>
       <div className="featured">
-        <h1>Featured</h1>
+        <h1>Featured Projects</h1>
         <div className="featured-projects">
-          <div className="project">
-            <h2>Project 1</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              luctus, nisl sit amet tincidunt tincidunt, nunc odio ultricies
-              lacus, in tincidunt odio purus nec felis. Donec nec nisl vitae
-              justo tincidunt tincidunt.
-            </p>
+          <div className="featured-column">
+            <div className="project">
+              <h2>Project 1</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                luctus, nisl sit amet tincidunt tincidunt, nunc odio ultricies
+                lacus, in tincidunt odio purus nec felis. Donec nec nisl vitae
+                justo tincidunt tincidunt.
+              </p>
+            </div>
+            <div className="project">
+              <h2>Project 2</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                luctus, nisl sit amet tincidunt tincidunt, nunc odio ultricies
+                lacus, in tincidunt odio purus nec felis. Donec nec nisl vitae
+                justo tincidunt tincidunt.
+              </p>
+            </div>
           </div>
-          <div className="project">
-            <h2>Project 2</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              luctus, nisl sit amet tincidunt tincidunt, nunc odio ultricies
-              lacus, in tincidunt odio purus nec felis. Donec nec nisl vitae
-              justo tincidunt tincidunt.
-            </p>
-          </div>
-          <div className="project">
-            <h2>Project 3</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              luctus, nisl sit amet tincidunt tincidunt, nunc odio ultricies
-              lacus, in tincidunt odio purus nec felis. Donec nec nisl vitae
-              justo tincidunt tincidunt.
-            </p>
-          </div>
-          <div className="project">
-            <h2>Project 4</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              luctus, nisl sit amet tincidunt tincidunt, nunc odio ultricies
-              lacus, in tincidunt odio purus nec felis. Donec nec nisl vitae
-              justo tincidunt tincidunt.
-            </p>
+          <div className="featured-column right">
+            <div className="project">
+              <h2>Project 3</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                luctus, nisl sit amet tincidunt tincidunt, nunc odio ultricies
+                lacus, in tincidunt odio purus nec felis. Donec nec nisl vitae
+                justo tincidunt tincidunt.
+              </p>
+            </div>
+            <div className="project">
+              <h2>Project 4</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                luctus, nisl sit amet tincidunt tincidunt, nunc odio ultricies
+                lacus, in tincidunt odio purus nec felis. Donec nec nisl vitae
+                justo tincidunt tincidunt.
+              </p>
+            </div>
           </div>
         </div>
       </div>
