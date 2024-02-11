@@ -57,9 +57,6 @@ const Canvas: React.FC = () => {
           <li></li>
           <li></li>
           <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
         </ul>
       </section>
       <div className="featured">
