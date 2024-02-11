@@ -9,14 +9,20 @@ function App() {
           <h3>Elaheh Arjomandi</h3>
         </div>
         <div className="channels">
-          <img src="/github.svg" alt="" />
-          <img src="/linkedin.svg" alt="" />
-          <img src="/email.svg" alt="" />
+          <a href="https://github.com/eviva2000">
+            <img src="/github.svg" alt="" />
+          </a>
+          <a href="https://www.linkedin.com/in/elaheharjomandi/">
+            <img src="/linkedin.svg" alt="" />
+          </a>
+          <a href="mailto:arjomandielaheh@gmail.com">
+            <img src="/email.svg" alt="" />
+          </a>
         </div>
       </header>
       <Canvas />
       <footer>
-        <p>© 2021</p>{" "}
+        <p>Made with 💙 by Elaheh </p> <p>© 2024</p>
       </footer>
     </div>
   );

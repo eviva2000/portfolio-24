@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
 .App {
@@ -17,7 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Comfortaa", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 section {
@@ -58,10 +57,10 @@ section {
   max-width: 450px;
   padding: 0 35px;
   text-align: justify;
+  color: #221f3b;
 }
 
 .info p {
-  color: #0f2027;
   font-weight: 500;
   font-size: 1rem;
   margin-bottom: 20px;
@@ -153,7 +152,7 @@ section {
   font-size: 1.9rem;
   line-height: 1.4;
   font-family: "Montserrat", sans-serif;
-  color: #fcd64b;
+  color: #6c6cff;
   -webkit-background-clip: text;
   background-clip: text;
 }
@@ -200,7 +199,7 @@ section {
   background-image: linear-gradient(
     225deg,
     #d0d1d2 0%,
-    #eadeb3 50%,
+    #7676f2 50%,
     #e3e5e7 100%
   );
 
@@ -300,6 +299,7 @@ section {
   display: grid;
   gap: 2rem;
   margin-top: 5rem;
+  justify-content: center;
 }
 
 .featured-column {
@@ -308,12 +308,37 @@ section {
 }
 
 .project {
-  height: 350px;
-  border: 2px solid #fcd64b;
+  border: 3px solid #6c6cff;
   border-radius: 2rem;
   max-width: 350px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  min-width: 300px;
 }
 
+.project-wrapper {
+  text-decoration: none;
+  color: #fff;
+}
+
+.project-wrapper h4 {
+  text-align: left;
+}
+.project .p-image {
+  width: 100%;
+  border-radius: 29px;
+  margin-bottom: 2rem;
+}
+.project .tech img {
+  width: 40px;
+  margin-right: 1rem;
+}
+.project .tech p {
+  margin-bottom: 2rem;
+}
+.logo-wrapper {
+  margin-bottom: 1rem;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -331,13 +356,14 @@ header {
 .brand h3 {
   font-size: 1.6rem;
   font-family: "Caveat Brush", cursive;
-  color: #fcd64b;
+  color: #6c6cff;
   text-decoration-line: underline;
 }
 
 footer {
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
+  margin: 2rem;
 }
 
 @keyframes animate {
@@ -359,7 +385,7 @@ footer {
     padding: 3rem 7rem 1rem;
   }
   section {
-    min-height: 85vh;
+    min-height: 80vh;
   }
 
   .content {
@@ -375,12 +401,13 @@ footer {
 
   .featured {
     margin-top: 0;
-    padding: 4rem 5rem;
+    padding: 5rem;
   }
 
   .featured-projects {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 10rem;
+    justify-content: unset;
   }
   .featured-column {
     gap: 10rem;
