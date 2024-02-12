@@ -342,19 +342,20 @@ section {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   backdrop-filter: blur(30px);
-  padding: 1rem 3rem;
+  padding: 1rem;
 }
-
+.channels {
+  display: grid;
+  gap: 1rem;
+}
 .channels img {
   width: 20px;
   height: 20px;
-  margin-right: 20px;
 }
 
 .brand h3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-family: "Caveat Brush", cursive;
   color: #6c6cff;
   text-decoration-line: underline;
@@ -364,6 +365,10 @@ footer {
   background-color: #fff;
   color: #000;
   margin: 2rem;
+}
+
+.csoon-desktop {
+  display: none;
 }
 
 @keyframes animate {
@@ -383,6 +388,13 @@ footer {
 @media (min-width: 768px) {
   header {
     padding: 3rem 7rem 1rem;
+    align-items: center;
+  }
+  .channels {
+    display: block;
+  }
+  .channels img {
+    margin-right: 20px;
   }
   section {
     min-height: 80vh;
@@ -430,5 +442,11 @@ footer {
 
   .circles li {
     animation: animate 25s linear infinite;
+  }
+  .csoon-desktop {
+    display: block;
+  }
+  .csoon-mobile {
+    display: none;
   }
 }

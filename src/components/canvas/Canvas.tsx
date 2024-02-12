@@ -86,7 +86,7 @@ const Canvas: React.FC = () => {
               </div>
               <h4>Sundaes on demand</h4>
             </a>
-            <div className="project-wrapper">
+            <div className="project-wrapper csoon-desktop">
               <div className="project">
                 <img className="p-image" src="csoon.png" alt="" />
                 <div className="tech">
@@ -131,6 +131,20 @@ const Canvas: React.FC = () => {
               </div>
               <h4>Asana-clone</h4>
             </a>
+            <div className="project-wrapper csoon-mobile">
+              <div className="project">
+                <img className="p-image" src="csoon.png" alt="" />
+                <div className="tech">
+                  {" "}
+                  <p>
+                    I am working on a few meaningful projects to showcase my
+                    skills in different areas, especially in working with cloud
+                    services and DevOps.
+                  </p>
+                  <p>They will appear here ASAP!</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
