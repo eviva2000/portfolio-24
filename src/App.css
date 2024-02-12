@@ -312,7 +312,6 @@ section {
   border-radius: 2rem;
   max-width: 350px;
   margin-bottom: 1rem;
-  padding: 0.5rem;
   min-width: 300px;
 }
 
@@ -326,7 +325,8 @@ section {
 }
 .project .p-image {
   width: 100%;
-  border-radius: 29px;
+  border-top-left-radius: 29px;
+  border-top-right-radius: 29px;
   margin-bottom: 2rem;
 }
 .project .tech img {
@@ -335,6 +335,7 @@ section {
 }
 .project .tech p {
   margin-bottom: 2rem;
+  padding: 0 1rem;
 }
 .logo-wrapper {
   margin-bottom: 1rem;
