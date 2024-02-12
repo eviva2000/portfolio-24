@@ -318,6 +318,7 @@ section {
 .project-wrapper {
   text-decoration: none;
   color: #fff;
+  margin-bottom: 2rem;
 }
 
 .project-wrapper h4 {
@@ -421,6 +422,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 10rem;
     justify-content: unset;
+    gap: 7rem;
   }
   .featured-column {
     gap: 10rem;
@@ -435,6 +437,9 @@ footer {
 
   .brand h3 {
     font-size: 2.5rem;
+  }
+  .project-wrapper {
+    margin-bottom: 0;
   }
 
   .btn {
