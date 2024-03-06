@@ -129,6 +129,9 @@ section {
   position: relative;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .swiper-slide span {
@@ -155,11 +158,6 @@ section {
   color: #6c6cff;
   -webkit-background-clip: text;
   background-clip: text;
-}
-.swiper-slide {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
 }
 
 .swiper-slide:nth-child(1n) {
@@ -367,6 +365,11 @@ footer {
   background-color: #fff;
   color: #000;
   margin: 2rem;
+}
+
+footer p {
+  margin: 20px 20px 0 0;
+  color: #6c6cff;
 }
 
 .csoon-desktop {
